@@ -42,4 +42,4 @@ http-server -p 4200
 
 ## Credits
 All credit goes to [Spring Project](https://spring.io).
-Adjustments for the course in 2021 is done by Hamid Ebadi.
+Adjustments for the test automation course in 2021 is done by Hamid Ebadi.
