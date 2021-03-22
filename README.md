@@ -14,7 +14,7 @@ Warning: **client only**.
 
 ## Running the web server
 
-After entering into the `static-content` directory (by running `cd static-content`), run **one** of the following commands to run a simple web server on port 4200:
+First, clone this repository. You will know have two repositories, spring and angular. After entering into the `static-content` directory (by running `cd spring-petclinic-angular/static-content`), run **one** of the following commands to run a simple web server on port 4200: 
 
 ```
 # Method 1 : using java
@@ -34,6 +34,7 @@ ruby -run -ehttpd . -p4200
 npm install -g http-server
 http-server -p 4200
 ```
+Then go to http://localhost:4200/
 
 ## Screenshot
 
