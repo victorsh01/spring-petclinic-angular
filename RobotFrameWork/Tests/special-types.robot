@@ -1,13 +1,8 @@
-
 *** Settings ***
-Library  SeleniumLibrary
-
-*** Variables ***
+Documentation     A test suite with a single test for valid login.
+...
+...               This test has a workflow that is created using keywords in
+...               the imported resource file.
+Resource
 
 *** Test Cases ***
-This is a test case
-    [Documentation]  Special types
-    [Tags]  Add new tags for pet types and special
-    Open Browser  http://localhost:4200/  chrome
-    Page Should Contain  home page
-    Close Browser
