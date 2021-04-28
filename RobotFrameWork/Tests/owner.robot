@@ -9,6 +9,6 @@ user can add new owners and add pets
     [Tags]                          test 1
 
     Open Browser                           about:blank   chrome
-    Go to                                  http://localhost:4200
+    Go to                                  http://localhost:4200/
 
     close browser
