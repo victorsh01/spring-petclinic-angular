@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        UI testing in PetClinic by Robot Framework
 ...                  this is to test funcitionalities of Veterinarians -- Feng
-Resource             ../Resource/Keywords_Vet.robot
+Resource             ../Resource/Keywords_Own.robot
 Library              SeleniumLibrary
 Test Setup          Generate Tests
 Test Teardown       End the test
