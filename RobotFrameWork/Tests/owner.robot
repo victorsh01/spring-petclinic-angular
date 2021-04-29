@@ -19,15 +19,15 @@ User Can Access The Web
 
 
 *** Test Cases ***
-Verify Veterinarians Access and Query For All
-    [Documentation]         users can access the Veterinarians to query and add pets
+Verify Owner Access and Query For All
+    [Documentation]         users can access Owner query and add pets
     [Tags]                  veterinarians
     Go To Web
-    Click Veterinarians
+    Click Owner
     All Query
 
 *** Test Cases ***
-Add Vets From All Qurey
+Add New Owner From All Qurey
     [Documentation]         users can add pets
     [Tags]                  adding
     Go To Web
@@ -37,5 +37,15 @@ Add Vets From All Qurey
     Create New Pet          Joe     Biden
     Confirm To Add New Pet      Joe Biden
 
+*** Test Cases ***
+Add Owner From All Qurey
+    [Documentation]         users can add pets
+    [Tags]                  adding
+    Go To Web
+    Click Owner
+    All Query
+    Click Add Vet
+    Create New Pet          Joe     Biden
+    Confirm To Add New Pet      Joe Biden
 
 
