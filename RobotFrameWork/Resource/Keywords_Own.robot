@@ -39,8 +39,6 @@ All Query
     # way_2: locating by element's text
     Page Should Contain Button          xpath://*[contains(text(),"Add Owner")]
 
-    close browser
-
     ${linenumber}=          Get Element Count       //*[@id="vets"]/tbody/tr
     Run keyword if          ${linenumber}>0         Verify Edit And Delete
 
