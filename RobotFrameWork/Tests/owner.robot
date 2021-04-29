@@ -44,8 +44,12 @@ Add Owner From All Qurey
     Go To Web
     Click Owner
     All Query
-    Click Add Vet
-    Create New Pet          Joe     Biden
-    Confirm To Add New Pet      Joe Biden
+    Click Add Owner
+    input text                   id: firstName    Peter
+    input text                   id: lastName     Parker
+    input text                   id: address      queens
+    input text                   id: city         New York
+    input text                   id: telephone    0736101217
+    Confirm To Add New Pet       Peter Parker
 
 
