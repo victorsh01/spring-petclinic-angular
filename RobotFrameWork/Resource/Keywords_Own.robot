@@ -17,7 +17,7 @@ Verify Page Loaded
     Page Should Contain                         Welcome to Petclinic
 
 Click Owner
-    Page Should Contain Element         xpath:/html/body/app-root/div[1]/nav/div/ul/li[2]     #"Veterinarians" link
+    Page Should Contain Element         xpath:/html/body/app-root/div[1]/nav/div/ul/li[2]     #"Owner" link
     Click Element                       xpath:/html/body/app-root/div[1]/nav/div/ul/li[1]
 
 All Query
