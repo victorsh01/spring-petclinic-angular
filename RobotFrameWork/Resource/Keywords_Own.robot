@@ -16,9 +16,9 @@ Verify Page Loaded
     Should Be Equal         ${GET_TITLE}        SpringPetclinicAngular
     Page Should Contain                         Welcome to Petclinic
 
-Click Veterinarians
-    Page Should Contain Element         xpath:/html/body/app-root/div[1]/nav/div/ul/li[3]     #"Veterinarians" link
-    Click Element                       xpath:/html/body/app-root/div[1]/nav/div/ul/li[3]
+Click Owner
+    Page Should Contain Element         xpath:/html/body/app-root/div[1]/nav/div/ul/li[2]     #"Veterinarians" link
+    Click Element                       xpath:/html/body/app-root/div[1]/nav/div/ul/li[1]/li[1]
 
 All Query
     Page Should Contain Element         //*[@routerlink="/vets"]    # click "all" link
