@@ -18,7 +18,7 @@ Verify Page Loaded
 
 Click Owner
     Page Should Contain Element         xpath:/html/body/app-root/div[1]/nav/div/ul/li[2]     #"Owner" link
-    Click Element                       xpath:/html/body/app-root/div[1]/nav/div/ul/li[1]
+    Click Element                       xpath:/html/body/app-root/div[1]/nav/div/ul/li[3]
 
 All Query
     Page Should Contain Element         //*[@routerlink="/owner"]    # click "all" link
