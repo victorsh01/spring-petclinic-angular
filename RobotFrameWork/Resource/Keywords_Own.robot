@@ -28,4 +28,17 @@ All Query
     Page Should Contain Element         //*[@class="table table-striped"]
     Element Text Should be              //*[@class="table table-striped"]/thead/tr/th[1]      Name
     Element Text Should be              //*[@class="table table-striped"]/thead/tr/th[2]      Address
+    Element Text Should be              //*[@class="table table-striped"]/thead/tr/th[3]      City
+    Element Text Should be              //*[@class="table table-striped"]/thead/tr/th[4]      Telephone
+    Element Text Should be              //*[@class="table table-striped"]/thead/tr/th[5]      Pets
+
+    # way_1: absoulte xpath
+    Page Should Contain Button          xpath:/html/body/app-root/app-owner-list/div/div/div/div/button[1]
+    Element Text Should Be              xpath:/html/body/app-root/app-owner-list/div/div/div/div/button[1]        Add Owner
+
+    # way_2: locating by element's text
+    Page Should Contain Button          xpath://*[contains(text(),"Add Vet")]
+
+    ${linenumber}=          Get Element Count       //*[@id="vets"]/tbody/tr
+    Run keyword if          ${linenumber}>0         Verify Edit And Delete
 
