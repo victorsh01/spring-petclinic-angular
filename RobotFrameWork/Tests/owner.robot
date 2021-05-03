@@ -4,7 +4,7 @@ Documentation        UI testing in PetClinic by Robot Framework
 Resource             ../Resource/Keywords_Own.robot
 Library              SeleniumLibrary
 Test Setup          Generate Tests
-Test Teardown       End the test
+Test Teardown       Close Active Browser
 
 *** Variables ***
 ${BROWSER}      chrome
@@ -16,40 +16,66 @@ User Can Access The Web
     [Documentation]         Web users can access the web
     [Tags]                  access
     Go To Web
+    Close Active Browser
 
 
 *** Test Cases ***
 Verify Owner Access and Query For All
     [Documentation]         users can access Owner query and add pets
-    [Tags]                  veterinarians
+    [Tags]                  Onwer
     Go To Web
     Click Owner
     All Query
+    Close Active Browser
 
 *** Test Cases ***
 Add New Owner From All Qurey
-    [Documentation]         users can add pets
-    [Tags]                  adding
-    Go To Web
-    Click Veterinarians
-    All Query
-    Click Add Vet
-    Create New Pet          Joe     Biden
-    Confirm To Add New Pet      Joe Biden
-
-*** Test Cases ***
-Add Owner From All Qurey
-    [Documentation]         users can add pets
-    [Tags]                  adding
+    [Documentation]         users can add information
+    [Tags]                  adding owner
     Go To Web
     Click Owner
     All Query
-    Click Add Owner
-    input text                   id: firstName    Peter
-    input text                   id: lastName     Parker
-    input text                   id: address      queens
-    input text                   id: city         New York
-    input text                   id: telephone    0736101217
-    Confirm To Add New Pet       Peter Parker
+    Add Owner Value
+    Close Active Browser
 
+*** Test Cases ***
+Edit Owner
+    [Documentation]         Users can edit their information
+    [Tags]                  editing owner
+    Go To Web
+    Click Owner
+    All Query
+    Edit Owner Value
+    Close Active Browser
+
+
+*** Test Cases ***
+Add New Pet
+    [Documentation]        Users can add pets
+    [Tags]                 adding pet
+    Go To Web
+    Click Owner
+    All Query
+    Add Pet Value
+    Close Active Browser
+
+*** Test Cases ***
+Edit Pet
+    [Documentation]        Users can edit pets
+    [Tags]                 editing pet
+    Go To Web
+    Click Owner
+    All Query
+    Edit Pet Value
+    Close Active Browser
+
+*** Test Cases ***
+Delete Pet
+   [Documentation]        Delete Pet
+   [Tags]                 delete pet
+   Go To Web
+   Click Owner
+   All Query
+   Remove Pet Value
+   Close Active Browser
 
