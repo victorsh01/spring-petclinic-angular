@@ -4,7 +4,7 @@ Documentation        UI testing in PetClinic by Robot Framework
 Resource             ../Resource/Keywords_Own.robot
 Library              SeleniumLibrary
 Test Setup          Generate Tests
-#Test Teardown       Close Active Browser
+Test Teardown       Close Active Browser
 
 *** Variables ***
 ${BROWSER}      chrome
