@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation        UI testing in PetClinic by Robot Framework
-...                  this is to test funcitionalities of Veterinarians -- Feng
+...                  this is to test funcitionalities of Owners -- Eli
 Resource             ../Resource/Keywords_Own.robot
 Library              SeleniumLibrary
 Test Setup          Generate Tests
-Test Teardown       Close Active Browser
+#Test Teardown       Close Active Browser
 
 *** Variables ***
 ${BROWSER}      chrome
@@ -79,3 +79,32 @@ Delete Pet
    Remove Pet Value
    Close Active Browser
 
+*** Test Cases ***
+Create Pet Visit
+   [Documentation]     Create Pet Visit
+   [Tags]              Create Pet Visit
+   Go To Web
+   Click Owner
+   All Query
+   Create Pet Visit
+   Close Active Browser
+
+*** Test Cases ***
+Edit Pet Visit
+    [Documentation]      Edit Pet Visit
+    [Tags]               Edit Pet Visit
+    Go To Web
+    Click Owner
+    All Query
+    Edit Pet Visit
+    Close Active Browser
+
+*** Test Cases ***
+Delete Pet Visit
+    [Documentation]     Delete Pet Visit
+    [Tags]              Delete Pet Visit
+    Go To Web
+    Click Owner
+    All Query
+    Delete Pet Visit
+    Close Active Browser
