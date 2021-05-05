@@ -44,6 +44,7 @@ Add Owner Value
     Click Button                        xpath:/html/body/app-root/app-owner-add/div/div/form/div[7]/div/button[2]   #Click Add owner again to save it
 
 Edit Owner Value
+    Wait Until Element Is Visible       xpath:/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a
     Click Element                       xpath:/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a  #Click on the owner
     Click Button                        xpath:/html/body/app-root/app-owner-detail/div/div/button[2]  #Click on edit
     Clear Element Text                  //*[@id="firstName"]      #Remove current values
